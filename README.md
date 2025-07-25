@@ -53,7 +53,10 @@ accentrex_web/
 - MySQL (e.g., via XAMPP)
 
 ### Backend Setup
-1. Copy `.env.example` to `.env` and fill in your database credentials.
+1. Start XAMPP and ensure MySQL is running.
+2. Access phpMyAdmin at `http://localhost/phpmyadmin` to manage your database.
+3. Create a database named as specified in your `.env` (e.g., `accentrex`).
+4. Copy `.env.example` to `.env` and fill in your database credentials (use `root` as user and leave password blank for default XAMPP setup).
 2. Install dependencies:
    ```bash
    cd server
