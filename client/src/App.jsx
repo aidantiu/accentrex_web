@@ -1,7 +1,6 @@
 // Import React and necessary hooks
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './styles/App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages 
