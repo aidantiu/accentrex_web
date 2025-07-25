@@ -18,7 +18,6 @@ accentrex_web/
 │   │   │   ├── homepage.jsx
 │   │   │   ├── health.jsx
 │   │   ├── App.jsx
-│   │   ├── main.jsx
 │   │   └── styles/
 │   ├── package.json
 │   └── vite.config.js
@@ -47,6 +46,7 @@ accentrex_web/
 ---
 
 ## Installation & Setup
+
 
 ### Prerequisites
 - Node.js & npm
