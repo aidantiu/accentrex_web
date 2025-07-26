@@ -1,12 +1,19 @@
+import Navbar from '../components/navbar';
+import Banner from '../components/banner';
+import Headline from '../components/headline';
+import Descriptions from '../components/description';
+import CountryCards from '../components/countrycards';
 
-import React from 'react';
-
-export default function Home() {
+const Homepage = () => {
   return (
-    <div className="homepage">
-        {/* Using Tailwind CSS classes for styling */}
-      <h1 className='text-9xl font-bold text-blue-500'>Welcome to the Homepage!</h1>
-      <p>This is a sample page component for your React app.</p>
+    <div className="bg-white text-[#611221] font-sans">
+      <Navbar />
+      <Banner />
+      <Headline />
+      <Descriptions />
+      <CountryCards />
     </div>
   );
-}
+};
+
+export default Homepage;
