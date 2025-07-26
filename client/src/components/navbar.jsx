@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Navbar = () => {
   return (
     <header className="flex flex-col items-center p-6 shadow-md">
-      <img src="/logo.png" alt="Accentex Logo" className="h-12 mb-4" />
+      <img src="./public/images/companylogo.png" alt="Accentex Logo" className="h-12 mb-4" />
       <nav className="flex gap-6 text-lg font-medium">
         {/* Palitan to ng <Link> components for better routing */}
         <a href="#" className="hover:underline">Home</a>
