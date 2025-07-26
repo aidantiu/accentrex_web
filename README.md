@@ -130,8 +130,13 @@ DB_NAME=accentrex
 
 ## Getting Started
 1. Clone the repository.
-2. Set up `.env` and install dependencies.
-3. Start backend and frontend servers.
-4. Begin development and contribute!
+2. **Very Important:** Before starting any work, always run:
+   ```bash
+   git pull origin main
+   ```
+   This ensures your local code is up to date with the latest changes from the main branch and helps prevent merge conflicts.
+3. Set up `.env` and install dependencies.
+4. Start backend and frontend servers.
+5. Begin development and contribute!
 
 For questions or help, see comments in code or contact the project maintainer.
