@@ -22,7 +22,7 @@ const Homepage = () => {
   return (
     <div className="bg-white text-[#831515] font-sans">
       <Navbar />
-      <Banner />
+      <Banner title="HOME" showCountries={true}/>
       <Headline />
 
       <p className="text-2xl md:text-2xl font-semibold text-center mt-10 px-4">
