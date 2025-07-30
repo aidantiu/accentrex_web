@@ -6,8 +6,11 @@ const Homepage = () => {
   return (
     <div className="bg-white text-[#611221] font-sans">
       <Navbar />
-      <Banner />
-      <Headline />
+      <Banner 
+      title="HOME" 
+      subtitle="AUSTRALIA | CANADA | NEW ZEALAND" 
+      />
+      <Headline title="Start Your Journey to a Brighter Future Abroad" />
       {/* Description */}
       <section className="p-6 text-center text-sm text-gray-600 max-w-3xl mx-auto">
         <p>
