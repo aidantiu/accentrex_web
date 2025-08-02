@@ -8,6 +8,7 @@ import Homepage from './pages/homepage.jsx'
 import Health from './pages/health.jsx';
 import AboutUs from './pages/aboutuspage.jsx';
 import AccountPage from "./pages/accountpage";
+import Services from './pages/servicespages.jsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/health" element={<Health />} />
         <Route path="/account" element={<AccountPage />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </BrowserRouter>
   );
