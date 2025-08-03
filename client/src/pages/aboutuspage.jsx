@@ -1,5 +1,6 @@
 import Navbar from '../components/navbar';
 import Banner from '../components/banner';
+import Footer from '../components/footer';
 import globeImage from '../assets/globe-image.png'; 
 import flyerImage from '../assets/flyer-image.png'; 
 import AIcon from '../assets/icons/a-accountability.png'; 
@@ -226,6 +227,7 @@ export default function AboutUs() {
           </div>
         </div>
         </section>
+        <Footer />
       </div>
   );
 }
