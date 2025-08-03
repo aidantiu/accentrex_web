@@ -1,4 +1,5 @@
 import Navbar from "../components/navbar";
+import Footer from '../components/footer';
 
 export default function AccountPage() {
   return (
@@ -45,6 +46,7 @@ export default function AccountPage() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
