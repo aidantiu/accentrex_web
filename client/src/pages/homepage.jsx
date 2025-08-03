@@ -1,6 +1,7 @@
 import Navbar from '../components/navbar';
 import Banner from '../components/banner';
 import Headline from '../components/headline';
+import Footer from '../components/footer';
 
 const CountryCard = ({ image, title, description }) => {
   return (
@@ -78,6 +79,7 @@ const Homepage = () => {
           />
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
