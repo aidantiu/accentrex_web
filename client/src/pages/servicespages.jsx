@@ -1,64 +1,51 @@
 import React from 'react';
-import logo from '../assets/AccentrexLogo.png';
+import '../styles/index.css';
+import Navbar from '../components/navbar';
+import Banner from '../components/banner';
 import visaIcon from '../assets/Group 7.png';
 import migrateIcon from '../assets/Group 51.png';
 import seminarIcon from '../assets/Earth Dots.png';
+
 import '../styles/index.css';
 
 import Footer from '../components/footer'; // ✅ Import the Footer component
 
 function Services() {
   return (
-    <div className="font-sans text-black bg-white">
-      <header className="text-center p-4">
-        <img
-          src={logo}
-          alt="Accenttrex Logo"
-          className="max-w-[237px] max-h-[210px] mx-auto"
-        />
-      </header>
+    <div className="font-sans text-[#831515] bg-white">
+      <Navbar />
 
-      <nav className="bg-[#8b0000] flex justify-center flex-wrap gap-6 py-3 rounded-full max-w-[600px] mx-auto mb-6">
-        {['HOME', 'ABOUT US', 'SERVICES', 'ACCOUNT', 'CONTACTS'].map((link) => (
-          <a
-            href="#"
-            key={link}
-            className="text-white font-bold text-sm no-underline"
-          >
-            {link}
-          </a>
-        ))}
-      </nav>
-
-      <div className="bg-[#8b0000] text-white text-center px-4 py-6 rounded-3xl max-w-[95%] mx-auto mb-6">
-        <h2 className="text-2xl font-bold">SERVICES</h2>
-        <div className="mt-3 text-sm border-t border-white pt-2">
-          VISA APPLICATION | STUDY, LIVE, AND MIGRATE PROGRAM | SEMINAR REGISTRATION
-        </div>
-      </div>
+      <Banner
+        title="Services"
+        subtitle="VISA APPLICATION | STUDY, LIVE, AND MIGRATE PROGRAM | SEMINAR REGISTRATION"
+        isServicePage={true}
+      />
 
       <div className="text-center text-3xl font-bold my-8">We Offer</div>
 
-      <ServiceCard
-        title="Visa Application"
-        image={visaIcon}
-        buttonLabel="Apply Here"
-        description="We provide professional assistance for all types of visa applications, including regular tourist visas and student visas for individuals planning to study abroad. Our team ensures a hassle-free process by guiding you through document preparation, submission procedures, and interview readiness, increasing your chances of approval."
-      />
+      {/* Responsive grid for service cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 md:px-12">
+        <ServiceCard
+          title="Visa Application"
+          image={visaIcon}
+          buttonLabel="Apply Here"
+          description="We provide professional assistance for all types of visa applications, including regular tourist visas and student visas for individuals planning to study abroad. Our team ensures a hassle-free process by guiding you through document preparation, submission procedures, and interview readiness, increasing your chances of approval."
+        />
 
-      <ServiceCard
-        title="Study, Live, and Migrate Program"
-        image={migrateIcon}
-        buttonLabel="Apply for Migration Assistance"
-        description="Our integrated program is designed for individuals seeking long-term opportunities abroad. We offer end-to-end support in studying overseas, transitioning into permanent residency, and eventually settling in your chosen country. With expert advice on educational institutions, immigration pathways, and settlement services, we help turn your global dreams into reality."
-      />
+        <ServiceCard
+          title="Study, Live, and Migrate Program"
+          image={migrateIcon}
+          buttonLabel="Apply for Migration Assistance"
+          description="Our integrated program is designed for individuals seeking long-term opportunities abroad. We offer end-to-end support in studying overseas, transitioning into permanent residency, and eventually settling in your chosen country. With expert advice on educational institutions, immigration pathways, and settlement services, we help turn your global dreams into reality."
+        />
 
-      <ServiceCard
-        title="Seminar Registration"
-        image={seminarIcon}
-        buttonLabel="Register here"
-        description="Stay informed and prepared by joining our informative seminars on international education, immigration policies, and career opportunities abroad. Register for our upcoming sessions to gain valuable insights, meet industry experts, and receive personalized guidance tailored to your goals."
-      />
+        <ServiceCard
+          title="Seminar Registration"
+          image={seminarIcon}
+          buttonLabel="Register here"
+          description="Stay informed and prepared by joining our informative seminars on international education, immigration policies, and career opportunities abroad. Register for our upcoming sessions to gain valuable insights, meet industry experts, and receive personalized guidance tailored to your goals."
+        />
+      </div>
 
       <Footer /> {/* ✅ Footer component used here */}
     </div>
@@ -67,13 +54,13 @@ function Services() {
 
 function ServiceCard({ title, image, description, buttonLabel }) {
   return (
-    <div className="bg-[#8b0000] text-white rounded-3xl max-w-[400px] mx-auto my-4 px-6 py-8 text-center">
+    <div className="bg-[#831515] text-white rounded-3xl px-6 py-8 text-center flex flex-col h-full shadow-md">
       <h3 className="text-lg font-semibold mb-4">{title}</h3>
       <img src={image} alt={title} className="max-w-[80px] mx-auto mb-4" />
-      <p className="bg-white text-black p-4 rounded-xl text-sm leading-relaxed">
+      <p className="bg-white text-[#831515] p-4 rounded-xl text-sm leading-relaxed text-justify flex-grow">
         {description}
       </p>
-      <button className="mt-5 bg-white text-[#8b0000] font-bold text-sm px-4 py-2 rounded-xl hover:bg-gray-100">
+      <button className="mt-5 bg-white text-[#831515] font-bold text-sm px-4 py-2 rounded-xl hover:bg-gray-100">
         {buttonLabel}
       </button>
     </div>
