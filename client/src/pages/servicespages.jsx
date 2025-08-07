@@ -1,41 +1,19 @@
 import React from 'react';
-import logo from '../assets/AccentrexLogo.png';
 import visaIcon from '../assets/Group 7.png';
 import migrateIcon from '../assets/Group 51.png';
 import seminarIcon from '../assets/Earth Dots.png';
 import '../styles/index.css';
+import Navbar from '../components/navbar';
+import Banner from '../components/banner';
 
 import Footer from '../components/footer'; // ✅ Import the Footer component
 
 function Services() {
   return (
     <div className="font-sans text-black bg-white">
-      <header className="text-center p-4">
-        <img
-          src={logo}
-          alt="Accenttrex Logo"
-          className="max-w-[237px] max-h-[210px] mx-auto"
-        />
-      </header>
+      <Navbar />
+      <Banner title="SERVICES" subtitle="VISA APPLICATION | STUDY, LIVE, AND MIGRATE PROGRAM | SEMINAR REGISTRATION" />
 
-      <nav className="bg-[#8b0000] flex justify-center flex-wrap gap-6 py-3 rounded-full max-w-[600px] mx-auto mb-6">
-        {['HOME', 'ABOUT US', 'SERVICES', 'ACCOUNT', 'CONTACTS'].map((link) => (
-          <a
-            href="#"
-            key={link}
-            className="text-white font-bold text-sm no-underline"
-          >
-            {link}
-          </a>
-        ))}
-      </nav>
-
-      <div className="bg-[#8b0000] text-white text-center px-4 py-6 rounded-3xl max-w-[95%] mx-auto mb-6">
-        <h2 className="text-2xl font-bold">SERVICES</h2>
-        <div className="mt-3 text-sm border-t border-white pt-2">
-          VISA APPLICATION | STUDY, LIVE, AND MIGRATE PROGRAM | SEMINAR REGISTRATION
-        </div>
-      </div>
 
       <div className="text-center text-3xl font-bold my-8">We Offer</div>
 
