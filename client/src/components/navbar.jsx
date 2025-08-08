@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header className="w-full bg-white shadow-md z-50">
       {/* MOBILE: Logo + Hamburger */}
-      <div className="flex justify-between items-center px-4 py-4 md:hidden">
+      <div className="flex justify-between items-center w-full max-w-7xl mx-auto px-4 py-4 md:hidden">
         <img
           src="./public/images/companylogo.png"
           alt="Accentex Logo"
@@ -23,7 +23,7 @@ const Navbar = () => {
 
       {/* MOBILE: Dropdown Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-[#831515] rounded-2xl text-white flex flex-col items-center gap-4 py-4 text-base font-medium">
+        <nav className="md:hidden bg-[#831515] rounded-2xl text-white flex flex-col items-center gap-4 py-4 text-base font-medium mx-4">
           <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About Us</a>
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
@@ -33,7 +33,7 @@ const Navbar = () => {
       )}
 
       {/* DESKTOP: Logo Centered + Nav Below */}
-      <div className="hidden md:flex flex-col items-center py-4">
+        <div className="hidden md:flex flex-col items-center w-full max-w-9xl mx-auto px-4 md:px-4 py-4">
         <img
           src="./public/images/companylogo.png"
           alt="Accentrex Logo"
@@ -41,7 +41,7 @@ const Navbar = () => {
         />
 
         {/* Nav Links */}
-        <nav className="w-full mt-4 bg-[#831515] rounded-2xl text-white flex justify-between px-16 py-3 font-medium text-lg">
+        <nav className="w-full mt-4 bg-[#831515] rounded-2xl text-white flex justify-between px-16 py-3 font-medium text-xl">
           <a href="#" className="hover:underline">HOME</a>
           <a href="#about" className="hover:underline">ABOUT US</a>
           <a href="#services" className="hover:underline">SERVICES</a>
