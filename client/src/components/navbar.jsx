@@ -33,7 +33,7 @@ const Navbar = () => {
       )}
 
       {/* DESKTOP: Logo Centered + Nav Below */}
-        <div className="hidden md:flex flex-col items-center w-full max-w-7xl mx-auto px-4 md:px-8 py-4">
+        <div className="hidden md:flex flex-col items-center w-full max-w-9xl mx-auto px-4 md:px-4 py-4">
         <img
           src="./public/images/companylogo.png"
           alt="Accentrex Logo"
@@ -41,7 +41,7 @@ const Navbar = () => {
         />
 
         {/* Nav Links */}
-        <nav className="w-full mt-4 bg-[#831515] rounded-2xl text-white flex justify-between px-16 py-3 font-medium text-lg">
+        <nav className="w-full mt-4 bg-[#831515] rounded-2xl text-white flex justify-between px-16 py-3 font-medium text-xl">
           <a href="#" className="hover:underline">HOME</a>
           <a href="#about" className="hover:underline">ABOUT US</a>
           <a href="#services" className="hover:underline">SERVICES</a>

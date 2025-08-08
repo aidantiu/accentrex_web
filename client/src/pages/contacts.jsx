@@ -6,54 +6,67 @@ const Contacts = () => {
   return (
     <div className="bg-white text-[#831515] font-sans">
       <Navbar />
-      <Banner title="CONTACTS" />
+      <Banner 
+      title="CONTACTS" 
+      subtitle={"Email Us | Call Us | Visit Us | Follow Us"} 
+      />
 
       {/* Headline */}
-      <section className="text-center mt-12 px-4">
-        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">
-          Connect with <br /> Accentrex
+      <section className="text-center mt-16 px-4">
+        <h2 className="text-4xl md:text-[10rem] font-extrabold leading-tight">
+          Connect with Accentrex
         </h2>
       </section>
 
       {/* Subheadline */}
-      <section className="text-center mt-6 px-4">
-        <p className="text-lg md:text-xl font-semibold">
+      <section className="text-center mt-8 md:mt-14 px-4">
+        <p className="text-lg md:text-4xl font-semibold">
           Looking for something else?
         </p>
       </section>
 
-      {/* Contact Info Card */}
-      <section className="mt-8 px-4 flex justify-center">
-        <div className="bg-[#831515] text-white p-6 md:p-8 rounded-xl shadow-lg max-w-xl w-full text-sm md:text-base">
-          <div className="space-y-4">
-            <div className="flex gap-2">
-              <span className="font-bold w-24 md:w-28">E-mail us:</span>
-              <span>eaoz@gmail.com</span>
+      {/* Unified Contact Info Box */}
+      <section className="mt-12 flex justify-center">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-stretch gap-6 max-w-[1200px] w-full px-4 py-9 bg-white rounded-2xl shadow-lg">
+          {[
+            {
+              title: 'E-mail us:',
+              content: <p className="break-words">eaoz@gmail.com</p>,
+            },
+            {
+              title: 'Call us:',
+              content: <p className="break-words">09958494428 or 09454352606</p>,
+            },
+            {
+              title: 'Visit us:',
+              content: (
+                <p className="break-words">
+                  Suite 1414, 14th floor, AIC Burgundy Empire Tower, ADB Ave. Corner, Garnet Road, Ortigas Center, Pasig City, Philippines (Back of Robinson's Galleria)
+                </p>
+              ),
+            },
+            {
+              title: 'Follow us:',
+              content: (
+                <a
+                  href="https://www.facebook.com/accentrex/"
+                  className="underline break-words hover:text-gray-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://www.facebook.com/accentrex/
+                </a>
+              ),
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#831515] text-white flex-1 min-w-[250px] p-8 md:p-10 rounded-2xl shadow-xl"
+            >
+              <p className="font-bold text-lg md:text-xl mb-4">{item.title}</p>
+              <div className="text-base md:text-lg">{item.content}</div>
             </div>
-            <div className="flex gap-2">
-              <span className="font-bold w-24 md:w-28">Call us:</span>
-              <span>09958494428 or 09454352606</span>
-            </div>
-            <div className="flex gap-2">
-              <span className="font-bold w-24 md:w-28">Visit us:</span>
-              <span className="max-w-xs">
-                Suite 1414, 14th floor, AIC Burgundy Empire Tower, ADB Ave. Corner,
-                Garnet Road, Ortigas Center, Pasig City, Philippines (Back of Robinson's
-                Galleria)
-              </span>
-            </div>
-            <div className="flex gap-2">
-              <span className="font-bold w-24 md:w-28">Follow us:</span>
-              <a
-                href="https://www.facebook.com/accentrex/"
-                className="underline text-white hover:text-gray-200 break-words"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                https://www.facebook.com/accentrex/
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 

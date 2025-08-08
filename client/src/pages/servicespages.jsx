@@ -1,16 +1,12 @@
 import React from 'react';
 import '../styles/index.css';
-import Navbar from '../components/navbar';
-import Banner from '../components/banner';
 import visaIcon from '../assets/Group 7.png';
 import migrateIcon from '../assets/Group 51.png';
 import seminarIcon from '../assets/Earth Dots.png';
-
 import '../styles/index.css';
 import Navbar from '../components/navbar';
 import Banner from '../components/banner';
-
-import Footer from '../components/footer'; // ✅ Import the Footer component
+import Footer from '../components/footer'; 
 
 function Services() {
   return (
@@ -23,10 +19,10 @@ function Services() {
         isServicePage={true}
       />
 
-      <div className="text-center text-3xl font-bold my-8">We Offer</div>
+      <div className="text-center text-5xl font-bold my-16 mt-16">We Offer</div>
 
       {/* Responsive grid for service cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 md:px-12">
+      <div className="grid grid-cols-1 px-10 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 md:px-12 shadow-lg py-4">
         <ServiceCard
           title="Visa Application"
           image={visaIcon}
