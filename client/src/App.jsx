@@ -9,6 +9,7 @@ import Health from './pages/health.jsx';
 import AboutUs from './pages/aboutuspage.jsx';
 import AccountPage from "./pages/accountpage";
 import Services from './pages/servicespages.jsx';
+import Contacts from './pages/contacts.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/health" element={<Health />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </BrowserRouter>
   );
