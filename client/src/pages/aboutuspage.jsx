@@ -1,6 +1,5 @@
 import Navbar from '../components/navbar';
 import Banner from '../components/banner';
-import Footer from '../components/footer';
 import globeImage from '../assets/globe-image.png'; 
 import flyerImage from '../assets/flyer-image.png'; 
 import AIcon from '../assets/icons/a-accountability.png'; 
@@ -12,6 +11,7 @@ import TIcon from '../assets/icons/t-transparency.png';
 import RIcon from '../assets/icons/r-reliability.png'; 
 import EIcon2 from '../assets/icons/e-excellence.png'; 
 import XIcon from '../assets/icons/x-experience.png'; 
+import Footer from '../components/footer';
 
 
 export default function AboutUs() {
@@ -22,7 +22,7 @@ export default function AboutUs() {
 
       {/* study live migrate + image */}
       <div className="flex flex-col md:flex-row items-center px-6 py-6 gap-6">
-        <div className="flex-1 text-4xl md:text-5xl font-bold space-y-2 text-center md:text-left">
+        <div className="flex-1 text-7xl md:text-8xl font-bold space-y-2 text-center md:text-left">
           <p>study</p>
           <p>live</p>
           <p>migrate</p>
@@ -37,7 +37,7 @@ export default function AboutUs() {
       </div>
 
       {/* Our Mission section */}
-      <section className="px-6 pb-10">
+      <section className="px-13 pb-10">
         <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
         <div className="border border-[#660000] rounded-xl p-4 text-[15px] text-justify leading-relaxed">
           <p className="mb-4">
@@ -48,8 +48,15 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-
-      <section className="bg-white text-[#611221] font-sans py-10 px-6 md:px-20">
+      
+       {/* Our Core Values section with background image */}
+      <section className="relative bg-white text-[#611221] font-sans py-10 px-6 md:px-20">
+        <img
+          src="./public/images/bg-mission.jpg"
+          alt="Mission background"
+          className="absolute inset-0 w-full h-full object-cover opacity-20 z-0"
+        />
+      <div classname="relative z-10">
         <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
           What we do?
         </h2>
@@ -83,6 +90,7 @@ export default function AboutUs() {
         <p className="text-base mb-8 text-center max-w-3xl mx-auto font-semibold">
           Currently, we are inviting IT professionals and engineers with at least 5 years of experience to attend our FREE seminar on how to migrate to Australia.
         </p>
+      </div>
       </section>
 
       {/* Why Choose Accentrex */}
@@ -227,8 +235,7 @@ export default function AboutUs() {
           </div>
         </div>
         </section>
-        <Footer />
+      <Footer />
       </div>
   );
 }
-
