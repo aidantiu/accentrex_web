@@ -1,6 +1,6 @@
 import React from 'react';
-import footerBg from '../assets/footerBg.png'; // Update with actual path
-import footerLogo from '../assets/AccentrexLogo.png'; // Update with actual path
+import footerBg from '../assets/footerBg.png'; 
+import footerLogo from '../assets/AccentrexLogo.png'; 
 
 const Footer = () => {
   return (
