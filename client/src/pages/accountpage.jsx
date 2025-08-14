@@ -1,12 +1,11 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Banner from "../components/banner";
+
 
 export default function AccountPage() {
   return (
     <div className="bg-white text-[#7e0f0f] font-sans min-h-screen flex flex-col">
       <Navbar />
-      <Banner title="Account"/>
 
       {/* Form Section */}
       <div className="flex-grow px-4 py-10 flex items-center justify-center">

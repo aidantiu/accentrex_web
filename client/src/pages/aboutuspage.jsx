@@ -1,5 +1,4 @@
 import Navbar from '../components/navbar';
-import Banner from '../components/banner';
 import globeImage from '../assets/globe-image.png'; 
 import flyerImage from '../assets/flyer-image.png'; 
 import AIcon from '../assets/icons/a-accountability.png'; 
@@ -18,7 +17,6 @@ export default function AboutUs() {
   return (
     <div className="font-sans text-[#660000] bg-white">
       <Navbar />
-      <Banner title="ABOUT US" />
 
       {/* study live migrate + image */}
       <div className="flex flex-col md:flex-row items-center px-9 py-6 gap-225">
