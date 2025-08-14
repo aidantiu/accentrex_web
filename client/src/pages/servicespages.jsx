@@ -5,7 +5,7 @@ import migrateIcon from '../assets/Group 51.png';
 import seminarIcon from '../assets/Earth Dots.png';
 import '../styles/index.css';
 import Navbar from '../components/navbar';
-import Banner from '../components/banner';
+
 import Footer from '../components/footer'; 
 
 function Services() {
@@ -13,16 +13,10 @@ function Services() {
     <div className="font-sans text-[#831515] bg-white">
       <Navbar />
 
-      <Banner
-        title="Services"
-        subtitle="VISA APPLICATION | STUDY, LIVE, AND MIGRATE PROGRAM | SEMINAR REGISTRATION"
-        isServicePage={true}
-      />
-
       <div className="text-center text-5xl font-bold my-16 mt-16">We Offer</div>
 
       {/* Responsive grid for service cards */}
-      <div className="grid grid-cols-1 px-10 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 md:px-12 shadow-lg py-4">
+      <div className="grid grid-cols-1 px-10 md:grid-cols-3 gap-8 max-w-6xl mx-auto md:px-12 shadow-lg py-4">
         <ServiceCard
           title="Visa Application"
           image={visaIcon}
