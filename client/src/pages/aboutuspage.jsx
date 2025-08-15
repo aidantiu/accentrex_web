@@ -18,30 +18,34 @@ export default function AboutUs() {
     <div className="font-sans text-[#660000] bg-white">
       <Navbar />
 
-      {/* study live migrate + image */}
-      <div className="flex flex-col md:flex-row items-center px-9 py-6 gap-225">
-        <div className="flex-1 text-7xl md:text-8xl font-bold space-y-2 text-center md:text-left">
-          <p>study</p>
-          <p>live</p>
-          <p>migrate</p>
-        </div>
-        <div className="flex-1">
-          <img
-            src={globeImage}
-            alt="Globe"
-            className="rounded w-full max-w-sm mx-auto"
-          />
+      {/* study live migrate + image - centered */}
+      <div className="flex items-center justify-center px-6 md:px-30 py-6 min-h-[400px]">
+        {/* Left side: text + image */}
+        <div className="flex flex-1 flex-col md:flex-row items-center md:items-stretch gap-8 max-w-5xl">
+          {/* Text section */}
+          <div className="flex-1 flex flex-col justify-center text-6xl lg:text-8xl font-bold space-y-2 text-center md:text-left leading-tight text-[#831515]">
+            <p>STUDY</p>
+            <p>LIVE</p>
+            <p>MIGRATE</p>
+          </div>
+          {/* Image section */}
+          <div className="flex-1 flex justify-center items-center">
+            <img
+              src={globeImage}
+              alt="Globe"
+              className="rounded h-full max-h-[350px] object-contain"
+            />
+          </div>
         </div>
       </div>
-
       {/* Our Mission section */}
       <section className="px-13 pb-10">
-        <h3 className="text-4xl font-bold mb-4">Our Mission</h3>
+        <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
         <div className="border border-[#660000] rounded-xl p-4 text-[25px] text-justify leading-relaxed">
-          <p className="mb-4">
+          <p className="mb-4 text-xl text-gray-900 leading-relaxed">
             At Accenttrex, we help Filipinos turn their migration dreams into reality. Our mission is to simplify what can often be a long and overwhelming process by providing step-by-step guidance tailored to your personal circumstances.
           </p>
-          <p>
+          <p className="text-xl mb-4 text-gray-900 leading-relaxed">
             We have proudly assisted thousands of Filipinos in migrating to Australia, New Zealand, and Canada, opening new doors for careers, education, and a better life for their families.
           </p>
         </div>
