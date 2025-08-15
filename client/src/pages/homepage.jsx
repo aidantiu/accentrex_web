@@ -38,26 +38,21 @@ const Homepage = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="relative z-10 max-w-7xl px-6 lg:px-12 mx-25">
           <div className="max-w-2xl">
-            {/* Scroll Down indicator */}
-            <div className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 -rotate-90 text-white text-sm tracking-widest">
-              <span>← Scroll Down</span>
-            </div>
-            
-            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-6xl lg:text-8xl font-bold text-gray-900 leading-tight mb-6">
               Expert Global
               <span className="text-[#831515] block">Migration</span>
               <span className="block">Professionals</span>
             </h1>
-            
-            <p className="text-lg text-gray-200 leading-relaxed mb-8 max-w-lg">
+
+            <p className="text-xl text-gray-900 leading-relaxed mb-8 max-w-lg">
               At Accentrex, we simplify the path to your dream life overseas. From expert
               consultation to smooth settlement, our team is here to support you with
               reliable, personalized assistance — every step of the way.
             </p>
-            
-            <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-none hover:bg-white hover:text-[#831515] transition-all duration-300 flex items-center gap-2">
+
+            <button className="bg-transparent border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-none hover:bg-[#831515] hover:border-[#831515] hover:text-white transition-all duration-300 flex items-center gap-2">
               Read More <span>→</span>
             </button>
           </div>
