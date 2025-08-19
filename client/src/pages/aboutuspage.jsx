@@ -159,12 +159,12 @@ export default function AboutUs() {
         />
         <div className="relative z-10">
           <h2 className="text-3xl font-bold mb-2">Our Core Values</h2>
-          <p className="mb-2 font-medium">ACCENTREX is our core values</p>
-          <p className="mb-10">
+          <p className="text-lg mb-2 font-medium">ACCENTREX is our core values</p>
+          <p className="text-lg mb-10">
             Here at Accentrex, our team possess the following core values intrinsic to our daily operations and lives:
           </p>
 
-          <div className="grid grid-cols-3 gap-8 justify-items-center">
+          <div className="grid grid-cols-3 gap-8 justify-items-center max-w-2xl mx-auto">
             {coreValues.map(({ letter, label, icon }) => (
               <div
                 key={label}
