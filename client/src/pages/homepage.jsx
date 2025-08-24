@@ -26,7 +26,7 @@ const CountryCard = ({ image, title, description }) => {
 const Homepage = () => {
   return (
     <div className="w-full">
-      {/* ✅ Navbar always on top */}
+      {/* Navbar always on top */}
       <header className="relative z-50 w-full">
         <Navbar />
       </header>
@@ -112,7 +112,7 @@ const Homepage = () => {
             />
           </div>
 
-          {/* Responsive Grid */}
+          {/* Responsive Grid*/}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <CountryCard
               image="./public/images/australia.jpg"
